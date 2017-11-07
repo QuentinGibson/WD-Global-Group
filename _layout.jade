@@ -1,13 +1,66 @@
-doctype
-html
+doctype html
+html(lang='en' dir="ltr")
   head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie-edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content="#{ description }")
+    meata(name="keyword" content="collection agency WD Global Group")
+    title WD Global Group | #{ title }
     link(rel="stylesheet" href="css/main.css")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans")
+    // https://www.favicon-generator.org/
+    link(rel="apple-touch-icon" sizes="57x57" href="img/favicons.ico/apple-icon-57x57.png")
+    link(rel="apple-touch-icon" sizes="60x60" href="img/favicons.ico/apple-icon-60x60.png")
+    link(rel="apple-touch-icon" sizes="72x72" href="img/favicons.ico/apple-icon-72x72.png")
+    link(rel="apple-touch-icon" sizes="76x76" href="img/favicons.ico/apple-icon-76x76.png")
+    link(rel="apple-touch-icon" sizes="114x114" href="img/favicons.ico/apple-icon-114x114.png")
+    link(rel="apple-touch-icon" sizes="120x120" href="img/favicons.ico/apple-icon-120x120.png")
+    link(rel="apple-touch-icon" sizes="144x144" href="img/favicons.ico/apple-icon-144x144.png")
+    link(rel="apple-touch-icon" sizes="152x152" href="img/favicons.ico/apple-icon-152x152.png")
+    link(rel="apple-touch-icon" sizes="180x180" href="img/favicons.ico/apple-icon-180x180.png")
+    link(rel="icon" type="image/png" sizes="192x192" href="img/favicons.ico/android-icon-192x192.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="img/favicons.ico/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="96x96" href="img/favicons.ico/favicon-96x96.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="img/favicons.ico/favicon-16x16.png")
+    link(rel="manifest" href="/manifest.json")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-TileImage" content="/ms-icon-144x144.png")
+    meta(name="theme-color" content="#ffffff")
+    // Facebook
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="https://wdglobalgroup.com")
+    meta(property="og:title" content="WD Global Group")
+    meta(property="og:image" content="https://wdglobalgroup.com/img/Logo.png")
+    meta(property="og:description" content="A full service nationally recognized Accounts" +
+    " Receivable Management firm headquartered in Atlanta, GA.")
+    meta(property="og:site_name" content="WD Global Group")
+    meta(property="og:locale" content="en_US")
+    meta(property="og:image:width" content="500")
+    meta(property="og:image:height" content="500")
+    // Twitter
+    meta(name="twitter:card" content="summary")
+    meta(name="twitter:site" content="@site_account")
+    meta(name="twitter:creator" content="@individual_account")
+    meta(name="twitter:url" content="https://wdglobalgroup.com")
+    meta(name="twitter:title" content="WD Global Group")
+    meta(name="twitter:description" content="A full service nationally recognized Accounts" +
+    " Receivable Management firm headquartered in Atlanta, GA.")
+    meta(name="twitter:image" content="https://wdglobalgroup.com/img/Logo.png")
+
   body
-    include shared/navbar
+    include shared/_navbar
     != yield
-    include shared/footer
+    include shared/_footer
+    // Global site tag (gtag.js) - Google Analytics
+    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109321054-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag () {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109321054-1');
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js")

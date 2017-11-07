@@ -13,29 +13,35 @@
   color: $font-color;
   position: relative;
   background-size: cover;
-  background-position: center;
   overflow: hidden;
-  background-color: $white;
-
-  &.fdb-viewport {
-    min-height: calc(100% - 2 * $block-padding);
-
-    .container {
-      min-height: calc(100% - 2 * $block-padding);
-    }
-  }
+  background: $white center;
 
   &.fdb-image-bg {
     color: mix($black, $white, 5%);
   }
 
-  .fdb-box {
+  @mixin mixin-fdb-bock {
     background: $white;
     color: $font-color;
-    padding: 60px 40px;
     @include border-radius(4px);
     @include froala-box-shadow(1);
     overflow: hidden;
+  }
+
+  .fdb-box {
+    @include mixin-fdb-bock;
+    padding: 60px 40px;
+
+  }
+
+  .fdb-box-med {
+    padding: 30px 20px;
+    @include mixin-fdb-bock;
+  }
+
+  .fdb-block-small {
+    @include mixin-fdb-bock;
+    padding: 20px 10px;
   }
 
   .fdb-touch {
@@ -243,4 +249,9 @@ table {
       border-top: 0;
     }
   }
+}
+
+.fdb-block-med {
+  @extend .fdb-block;
+  padding: 70px 0;
 }
