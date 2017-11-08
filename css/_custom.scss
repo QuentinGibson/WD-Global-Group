@@ -1,0 +1,20 @@
+.border-liner {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.bottom-bar:after {
+  margin: 10px auto 0;
+  content:' ';
+  display: block;
+  border: 1px solid #eee;
+  max-width: 300px;
+}
+
+.header-background {
+  background: url('/img/blue-bar.jpg');
+}
+
+.aboutUs-Title {
+    border-bottom: 3px solid #444;
+    padding-bottom: 20px;
+}
