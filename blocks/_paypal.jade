@@ -1,0 +1,24 @@
+form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+    input(type='hidden', name='cmd', value='_s-xclick')
+    table
+        tr
+            td Payment Plan
+        tr
+            td Enter the maximum amount you want to pay each month
+        tr
+            td
+                | $
+                input(type='text', name='max_amount', value='')
+                | USD
+        tr
+            td You can be billed up to $50.00USD
+    input(type='hidden', name='encrypted', value='-----BEGIN PKCS7-----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-----END PKCS7-----\
+  ')
+    table
+        tr
+            td(align='center')
+                i Sign up for
+        tr
+            td
+                input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_auto_billing_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
+    img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
