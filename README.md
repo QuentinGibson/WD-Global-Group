@@ -1,6 +1,9 @@
 # WD-Global-Group
   [wdglobalgroup.com](https://wdglobalgroup.com)
 
+![image of website](https://raw.githubusercontent.com/QuentinGibson/WD-Global-Group/master/site/site-img.png)
+
+
 ## Introduction
   This is the source code for wdglobalgroup.com. A site for a collection agency that people can pay their debt throught. Also, the agancy's information is displayed for business inquiries.
 
